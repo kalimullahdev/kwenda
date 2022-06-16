@@ -37,10 +37,10 @@ class IconWithTextCard extends StatelessWidget {
         width: cardWidth ?? 100,
         decoration: donotShowShadow
             ? Styles.boxDecoration.copyWith(
-                color: ColorResources.whiteColor,
+                color: Cr.whiteColor,
               )
             : Styles.boxDecorationWithShadow.copyWith(
-                color: ColorResources.whiteColor,
+                color: Cr.whiteColor,
               ),
         padding: const EdgeInsets.all(Di.PSES),
         child: Column(
@@ -52,7 +52,7 @@ class IconWithTextCard extends StatelessWidget {
                 : (iconData != null)
                     ? Icon(
                         iconData,
-                        color: iconColor ?? ColorResources.blueColor,
+                        color: iconColor ?? Cr.blueColor,
                         size: iconSize ?? 30,
                       )
                     : const SizedBox(),
@@ -63,7 +63,7 @@ class IconWithTextCard extends StatelessWidget {
               text,
               textAlign: TextAlign.center,
               style: defaultRegular.copyWith(
-                color: textColor ?? ColorResources.greyColor,
+                color: textColor ?? Cr.greyColor,
                 fontSize: fontSize ?? Di.FSS,
               ),
             )

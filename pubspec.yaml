@@ -79,5 +79,13 @@ flutter:
           weight: 700
         - asset: assets/fonts/montserrat/Montserrat-ExtraBold.ttf
           weight: 900
+    - family: SFNDisplay
+      fonts:
+        - asset: assets/fonts/sfndisplay_regular.otf
+    - family: SFDRegular
+      fonts:
+        - asset: assets/fonts/sfd_regular.ttf
 # Montserrat-Light.ttf
 # Montserrat-ExtraBold.ttf
+# sfndisplay_regular.otf
+# sfd_regular

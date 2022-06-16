@@ -26,7 +26,7 @@ class BankCard extends StatelessWidget {
           children: [
             topWidget ??
                 const CircleAvatar(
-                  backgroundColor: ColorResources.greyColor,
+                  backgroundColor: Cr.greyColor,
                 ),
             const SizedBox(height: Di.PSS),
             Text(

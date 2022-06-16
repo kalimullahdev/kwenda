@@ -26,13 +26,11 @@ class CustomListTileWithCheckBox extends StatelessWidget {
         children: [
           Icon(
             isChecked ? Icons.check_circle : Icons.circle_outlined,
-            color: isChecked
-                ? ColorResources.blueColor
-                : ColorResources.lightBlueButton,
+            color: isChecked ? Cr.blueColor : Cr.lightBlueButton,
           ),
           const SizedBox(width: Di.PSD),
           CircularAvatarWithLogo(
-            avatarBackgroundColor: ColorResources.lightBlueButton,
+            avatarBackgroundColor: Cr.lightBlueButton,
             avatarText: title,
           ),
         ],

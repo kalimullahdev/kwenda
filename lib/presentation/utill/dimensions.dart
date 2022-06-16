@@ -5,10 +5,19 @@ class Di {
   static const double FSES = 10.0;
   static const double FSS = 12.0;
   static const double FSD = 15.0;
-  static const double FSEL = 18.0;
-  static const double FSL = 20.0;
+  static const double FSL = 18.0;
+  static const double FSEL = 20.0;
   static const double FSOL = 24.0;
   static const double FSOTL = 32.0;
+
+  // Font Size can be also used for icon size
+  static const double ISES = 12.0;
+  static const double ISS = 15.0;
+  static const double ISD = 18.0;
+  static const double ISL = 20.0;
+  static const double ISEL = 24.0;
+  static const double ISOL = 32.0;
+  static const double ISOTL = 32.0;
 
   // Width Size
   static const double WSETS = 50.0;
@@ -21,24 +30,26 @@ class Di {
   static const double WSOTL = 400.0;
 
   // SizedBox Width
-  static final SizedBox SBWETS = SizedBox(width: PSETS);
-  static final SizedBox SBWES = SizedBox(width: PSES);
-  static final SizedBox SBWS = SizedBox(width: PSS);
-  static final SizedBox SBWD = SizedBox(width: PSD);
-  static final SizedBox SBWL = SizedBox(width: PSL);
-  static final SizedBox SBWEL = SizedBox(width: PSEL);
-  static final SizedBox SBWOV = SizedBox(width: PSOL);
-  static final SizedBox SBWOTL = SizedBox(width: PSOTL);
+  static const SizedBox SBWETS = SizedBox(width: PSETS);
+  static const SizedBox SBWES = SizedBox(width: PSES);
+  static const SizedBox SBWS = SizedBox(width: PSS);
+  static const SizedBox SBWD = SizedBox(width: PSD);
+  static const SizedBox SBWL = SizedBox(width: PSL);
+  static const SizedBox SBWEL = SizedBox(width: PSEL);
+  static const SizedBox SBWOV = SizedBox(width: PSOL);
+  static const SizedBox SBWOTL = SizedBox(width: PSOTL);
+  static const SizedBox SBW40 = SizedBox(width: PS40);
 
   // SizedBox Height
-  static final SizedBox SBHETS = SizedBox(height: PSETS);
-  static final SizedBox SBHES = SizedBox(height: PSES);
-  static final SizedBox SBHS = SizedBox(height: PSS);
-  static final SizedBox SBHD = SizedBox(height: PSD);
-  static final SizedBox SBHL = SizedBox(height: PSL);
-  static final SizedBox SBHEL = SizedBox(height: PSEL);
-  static final SizedBox SBHOV = SizedBox(height: PSOL);
-  static final SizedBox SBHOTL = SizedBox(height: PSOTL);
+  static const SizedBox SBHETS = SizedBox(height: PSETS);
+  static const SizedBox SBHES = SizedBox(height: PSES);
+  static const SizedBox SBHS = SizedBox(height: PSS);
+  static const SizedBox SBHD = SizedBox(height: PSD);
+  static const SizedBox SBHL = SizedBox(height: PSL);
+  static const SizedBox SBHEL = SizedBox(height: PSEL);
+  static const SizedBox SBHOL = SizedBox(height: PSOL);
+  static const SizedBox SBHOTL = SizedBox(height: PSOTL);
+  static const SizedBox SBH40 = SizedBox(height: PS40);
 
   // Radius Size
   static const double RSD = 18.0;
@@ -52,6 +63,7 @@ class Di {
   static const double PSEL = 25.0;
   static const double PSOL = 30.0;
   static const double PSOTL = 35.0;
+  static const double PS40 = 40.0;
 
   static const int MESSAGE_INPUT_LENGTH = 250;
   static const double NOTIFICATION_IMAGE_SIZE = 70.0;

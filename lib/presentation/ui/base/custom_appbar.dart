@@ -19,17 +19,17 @@ class CustomAppBar extends AppBar {
   }) {
     return AppBar(
       systemOverlayStyle: const SystemUiOverlayStyle(
-        statusBarColor: ColorResources.blueColor,
+        statusBarColor: Cr.blueColor,
         statusBarIconBrightness: Brightness.light, // For Android (dark icons)
         statusBarBrightness: Brightness.light, // For iOS (dark icons)
       ),
-      backgroundColor: ColorResources.blueColor,
+      backgroundColor: Cr.blueColor,
       elevation: 0,
       leading: RoundeIconButton(
         icon: icon ??
             const Icon(
               Icons.arrow_back_ios_new,
-              color: ColorResources.blueColor,
+              color: Cr.blueColor,
               size: 17,
             ),
         onPressed: () {
@@ -42,7 +42,7 @@ class CustomAppBar extends AppBar {
                 "$title      ",
                 overflow: TextOverflow.ellipsis,
                 style: defaultSemiBold.copyWith(
-                  color: ColorResources.whiteColor,
+                  color: Cr.whiteColor,
                   fontSize: Di.FSD + 2,
                 ),
               )

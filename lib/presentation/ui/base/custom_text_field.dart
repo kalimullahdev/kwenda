@@ -78,10 +78,10 @@ class CustomTextField extends StatelessWidget {
               ]
             : [],
         textAlign: textAlign ?? TextAlign.start,
-        cursorColor: cursorColor ?? ColorResources.blueColor,
+        cursorColor: cursorColor ?? Cr.blueColor,
         onChanged: onChanged,
         style: const TextStyle(
-          color: ColorResources.whiteColor,
+          color: Cr.whiteColor,
         ),
         autovalidateMode: AutovalidateMode.onUserInteraction,
         decoration: InputDecoration(
@@ -92,7 +92,7 @@ class CustomTextField extends StatelessWidget {
                   borderRadius:
                       BorderRadius.all(Radius.circular(borderRadius ?? 12)),
                   borderSide: const BorderSide(
-                    color: ColorResources.blueColor,
+                    color: Cr.blueColor,
                     // width: 5.0,
                   ),
                 )
@@ -109,7 +109,7 @@ class CustomTextField extends StatelessWidget {
               : InputBorder.none,
           hintStyle: hintStyle ??
               defaultThin.copyWith(
-                color: ColorResources.greyColor,
+                color: Cr.greyColor,
               ),
           hintText: hintText,
           suffixIcon: suffixIcon,
@@ -118,7 +118,7 @@ class CustomTextField extends StatelessWidget {
                   Icon(
                     prefixIconData,
                     size: 17,
-                    color: prefixIconColor ?? ColorResources.greyColor,
+                    color: prefixIconColor ?? Cr.greyColor,
                   )
               : null,
         ),
@@ -159,7 +159,7 @@ class CustomTextField2 extends StatelessWidget {
             ),
           ),
           hintStyle: defaultThin.copyWith(
-            color: ColorResources.greyColor,
+            color: Cr.greyColor,
           ),
           hintText: hintText,
         ),

@@ -24,12 +24,12 @@ class CircularAvatarWithLogo extends StatelessWidget {
                 ? Text(
                     avatarText![0],
                     style: defaultMedium.copyWith(
-                      color: ColorResources.whiteColor,
+                      color: Cr.whiteColor,
                       fontSize: Di.FSD + 2,
                     ),
                   )
                 : null,
-            backgroundColor: avatarBackgroundColor ?? ColorResources.greyColor,
+            backgroundColor: avatarBackgroundColor ?? Cr.greyColor,
           ),
         ),
         const Positioned(
@@ -37,7 +37,7 @@ class CircularAvatarWithLogo extends StatelessWidget {
           bottom: 1,
           child: CircleAvatar(
             radius: 9,
-            backgroundColor: ColorResources.blueColor,
+            backgroundColor: Cr.blueColor,
             // backgroundImage: logoImage,
           ),
         ),

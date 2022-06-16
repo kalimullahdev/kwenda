@@ -1,9 +1,52 @@
 import 'package:flutter/material.dart';
 
-class ColorResources {
-  // Theme Color
-  static const Color colorPrimary = Color(0xff186BFE);
-  static const Color underlineColor = Color(0xFFCCCCCC);
+class Cr {
+  // Theme Color.  colorAccent orange
+  static const Color colorPrimary = Color(0xffff9100);
+  static const Color colorAccent = Color(0xffff9100);
+  static const Color orange = Color(0xffffa500);
+  static const Color semiTransparentColor = Color(0x20ffffff);
+  static const Color transparent = Color(0x00000000);
+  static const Color transparentWhite = Color(0x99FFFFFF);
+  static const Color edittextSolid = Color(0xffEBEBEB);
+  static const Color edittextBorder = Color(0xffB7B7B7);
+  static const Color colorWhite = Colors.white;
+  static const Color black = Colors.black;
+  static const Color lineView = Color(0xffd0d0d0);
+
+// transparent_white_1
+  static const Color transparentWhite1 = Color(0x00FFFFFF);
+  static const Color transparentWhite2 = Color(0x20FFFFFF);
+  static const Color transparentWhite3 = Color(0x40FFFFFF);
+  static const Color transparentWhite4 = Color(0x60FFFFFF);
+  static const Color transparentWhite5 = Color(0x80FFFFFF);
+
+  // App customization
+  static const Color textColorBlack = Color(0xdf000000);
+  static const Color textColorWhite = Color(0xffffa500);
+  static const Color buttonTextColor = Color(0xffffa500);
+  static const Color blackTextColor = Color(0xdf000000);
+  static const Color viewBg = Color(0xffffa500);
+  static const Color viewgreyBg = Color(0xffffa500);
+  static const Color suggestionColor = Color(0xffffa500);
+
+  //EditText inside effect color
+  static const Color cancelRideColor = Color(0xffB0B0B0);
+  static const Color test = Color(0xfff5f5f5);
+  static const Color bgList = Color(0xffEFEFF4);
+  static const Color screenBg = Color(0xffF6F6F6);
+  static const Color grey = Color(0xffa4a4a4);
+
+  //Grey color shades
+  static const Color grey10 = Color(0xffe6e6e6);
+  static const Color grey20 = Color(0xffcccccc);
+  static const Color grey40 = Color(0xff8C8C8C);
+  static const Color grey60 = Color(0xff666666);
+  static const Color grey80 = Color(0xff37474F);
+
+  static const Color green700 = Color(0xff388E3C);
+
+  static const Color underlineColor = Color(0xff000000);
   static const Color whiteColor = Colors.white;
   static const Color greyColor = Color(0xff7D90AA);
   static const Color greyLightColor = Colors.white10;
@@ -16,12 +59,12 @@ class ColorResources {
   static const Color darkBlueTextColor = Color(0xff4F6C8D);
   static const Color orangeTextColor = Color(0xffFEA400);
   static const Color redTextColor = Color(0xffFE0000);
-  static const Color blackTextColor = Color(0xff092058);
+  // static const Color blackTextColor = Color(0xff092058);
   static const Color greyTextColor = Color(0xff7D90AA);
   static const Color blueTextColor = Color(0xff00B4FE);
   static const Color lightBlueButton = Color(0xffCADBFB);
 
-  // App color
+  // App color old
   static const Color blackColor = Color(0xff092058);
   static const Color blueColor = colorPrimary;
   static const Color focusColor = Color(0xFFADC4C8);
@@ -30,7 +73,7 @@ class ColorResources {
   static const Color disableButton = Color(0xffCADBFB);
   static const Color errorColor = Color(0xffFE0000);
 
-  //Icons color
+  //Icons color old
   static const Color blueIconColor = Color(0xff00B4FE);
   static const Color redIconColor = Color(0xffFE0000);
   static const Color greenIconColor = Color(0xff47C78F);
@@ -41,8 +84,8 @@ class ColorResources {
     end: Alignment.bottomRight,
     stops: [0.0, 1.0],
     colors: [
-      ColorResources.blueColor,
-      ColorResources.blueColor,
+      Cr.blueColor,
+      Cr.blueColor,
     ],
   );
 

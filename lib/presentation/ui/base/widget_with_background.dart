@@ -11,7 +11,7 @@ class WidgetWithBackground extends StatelessWidget {
     Key? key,
     required this.child,
     required this.backgroundColor,
-    this.textColor = ColorResources.whiteColor,
+    this.textColor = Cr.whiteColor,
     this.border,
     this.fontSize,
   }) : super(key: key);

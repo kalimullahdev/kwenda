@@ -24,7 +24,7 @@ class CustomTextButton extends StatelessWidget {
       child: Text(
         text,
         style: (textStyle ?? defaultRegular).copyWith(
-          color: color ?? ColorResources.blueColor,
+          color: color ?? Cr.blueColor,
           fontSize: textFontSize,
         ),
       ),

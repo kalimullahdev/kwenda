@@ -43,7 +43,7 @@ class CustomButton extends StatelessWidget {
               Text(
                 text ?? "",
                 style: defaultMedium.copyWith(
-                  color: backgroundColor ?? ColorResources.greenIconColor,
+                  color: backgroundColor ?? Cr.greenIconColor,
                 ),
               ),
         ),

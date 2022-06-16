@@ -55,8 +55,7 @@ Future<dynamic> codeNotRecievedDialog(BuildContext context) {
                   ),
                   Text(
                     "kwenda will call you on (405) 123 - 456 to read the OPT code",
-                    style: defaultRegular.copyWith(
-                        color: ColorResources.greyColor),
+                    style: defaultRegular.copyWith(color: Cr.greyColor),
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(
@@ -69,7 +68,7 @@ Future<dynamic> codeNotRecievedDialog(BuildContext context) {
                         onPressed: () => Navigator.pop(context),
                         text: "CLOSE",
                       ),
-                      RoundedElevatedButton(
+                      CustomElevatedButton(
                         onPressed: () {},
                         text: 'CALL',
                       ),
@@ -129,8 +128,7 @@ Future<dynamic> customDialog(
                 subtitle != null
                     ? Text(
                         subtitle,
-                        style: defaultRegular.copyWith(
-                            color: ColorResources.greyColor),
+                        style: defaultRegular.copyWith(color: Cr.greyColor),
                         textAlign: TextAlign.center,
                       )
                     : const SizedBox(),
@@ -156,7 +154,7 @@ Future<dynamic> customDialog(
                         ? SizedBox(
                             width: secondButtonWidth ?? 100,
                             // width: secondButtonWidth,
-                            child: RoundedElevatedButton(
+                            child: CustomElevatedButton(
                               onPressed: onPressedSecondButton ?? () {},
                               text: secondButtonText,
                             ),
@@ -232,7 +230,7 @@ Future<dynamic> customDialogWithIcon(
                   icon ??
                       Icon(
                         iconData,
-                        color: ColorResources.blueColor,
+                        color: Cr.blueColor,
                         size: Di.WSS,
                       ),
                   const SizedBox(
@@ -253,8 +251,7 @@ Future<dynamic> customDialogWithIcon(
                   subtitle != null
                       ? Text(
                           subtitle,
-                          style: defaultRegular.copyWith(
-                              color: ColorResources.greyColor),
+                          style: defaultRegular.copyWith(color: Cr.greyColor),
                           textAlign: TextAlign.center,
                         )
                       : const SizedBox(),
@@ -277,7 +274,7 @@ Future<dynamic> customDialogWithIcon(
                       secondButtonText != null
                           ? SizedBox(
                               width: firstButtonText == null ? 200 : null,
-                              child: RoundedElevatedButton(
+                              child: CustomElevatedButton(
                                 onPressed: onPressedSecondButton ?? () {},
                                 text: secondButtonText,
                               ),
@@ -323,8 +320,7 @@ Future<dynamic> phoneNumberLoginDialog(
                   title != null
                       ? Text(
                           title,
-                          style: defaultRegular.copyWith(
-                              color: ColorResources.greyColor),
+                          style: defaultRegular.copyWith(color: Cr.greyColor),
                           textAlign: TextAlign.center,
                         )
                       : const SizedBox(),
@@ -348,8 +344,7 @@ Future<dynamic> phoneNumberLoginDialog(
                   description != null
                       ? Text(
                           description,
-                          style: defaultRegular.copyWith(
-                              color: ColorResources.greyColor),
+                          style: defaultRegular.copyWith(color: Cr.greyColor),
                           textAlign: TextAlign.center,
                         )
                       : const SizedBox(),
@@ -370,7 +365,7 @@ Future<dynamic> phoneNumberLoginDialog(
                       secondButtonText != null
                           ? SizedBox(
                               width: 100,
-                              child: RoundedElevatedButton(
+                              child: CustomElevatedButton(
                                 onPressed: onPressedSecondButton ?? () {},
                                 text: secondButtonText,
                               ),

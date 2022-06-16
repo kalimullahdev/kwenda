@@ -12,7 +12,7 @@ class TextWithBackground extends StatelessWidget {
     Key? key,
     required this.text,
     this.backgroundColor,
-    this.textColor = ColorResources.whiteColor,
+    this.textColor = Cr.whiteColor,
     this.border,
     this.fontSize,
   }) : super(key: key);

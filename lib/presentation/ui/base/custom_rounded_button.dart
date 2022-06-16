@@ -13,7 +13,7 @@ class CustomRoundedButton extends StatelessWidget {
     required this.buttonText,
     this.width = 120,
     required this.onpressed,
-    this.linearGradient = ColorResources.blueLinearGradient,
+    this.linearGradient = Cr.blueLinearGradient,
   }) : super(key: key);
 
   @override
@@ -51,7 +51,7 @@ class CustomRoundedButton extends StatelessWidget {
           child: Text(
             buttonText,
             style: const TextStyle(
-              color: ColorResources.whiteColor,
+              color: Cr.whiteColor,
             ),
           ),
         ),
