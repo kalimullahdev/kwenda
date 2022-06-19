@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kwenda/presentation/ui/base/rounded_elevated_button.dart';
+import 'package:kwenda/presentation/ui/base/custom_elevated_button.dart';
 import 'package:kwenda/presentation/ui/screens/login_screen.dart';
 import 'package:kwenda/presentation/ui/screens/register_screen.dart';
 import 'package:kwenda/presentation/utill/color_resources.dart';

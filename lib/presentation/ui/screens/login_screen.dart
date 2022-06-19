@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:kwenda/presentation/ui/base/rounded_elevated_button.dart';
+import 'package:kwenda/presentation/ui/base/custom_elevated_button.dart';
+import 'package:kwenda/presentation/ui/base/custom_textfield.dart';
+import 'package:kwenda/presentation/ui/screens/change_password_screen.dart';
 import 'package:kwenda/presentation/utill/color_resources.dart';
 import 'package:kwenda/presentation/utill/dimensions.dart';
 import 'package:kwenda/presentation/utill/images.dart';
+import 'package:kwenda/presentation/utill/nav.dart';
 import 'package:kwenda/presentation/utill/strings.dart';
 import 'package:kwenda/presentation/utill/styles.dart';
 
@@ -54,14 +57,14 @@ class LoginScreen extends StatelessWidget {
                 ),
               ),
               Di.SBHL,
-              const SignInTextField(
+              const CustomTextField(
                 hintText: Str.phone_number,
                 leading: Text(
                   Str.country_code,
                 ),
               ),
               Di.SBHS,
-              const SignInTextField(
+              const CustomTextField(
                 hintText: Str.passbook,
                 leading: Icon(
                   Icons.lock_outline,
@@ -89,80 +92,21 @@ class LoginScreen extends StatelessWidget {
                 ),
               ),
               Di.SBHL,
-              const Text(
-                Str.change_password,
-                style: TextStyle(
-                  color: Cr.grey60,
-                  fontSize: Di.FSL,
+              TextButton(
+                onPressed: () {
+                  Nav.push(context, const ChangePasswordScreen());
+                },
+                child: const Text(
+                  Str.change_password,
+                  style: TextStyle(
+                    color: Cr.grey60,
+                    fontSize: Di.FSL,
+                  ),
                 ),
-              )
+              ),
             ],
           ),
         ),
-      ),
-    );
-  }
-}
-
-class SignInTextField extends StatelessWidget {
-  const SignInTextField({
-    Key? key,
-    this.leading,
-    this.hintText,
-  }) : super(key: key);
-  final Widget? leading;
-  final String? hintText;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      height: 50,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(10),
-        border: Border.all(width: 2),
-      ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Container(
-            height: 50,
-            width: 53,
-            decoration: const BoxDecoration(
-              border: Border(
-                right: BorderSide(
-                  color: Colors.black,
-                  width: 2.0,
-                ),
-              ),
-            ),
-            child: Center(
-              child: leading,
-            ),
-          ),
-          Di.SBWD,
-          Flexible(
-            child: TextField(
-              decoration: InputDecoration(
-                // suffixIcon: const Icon(
-                //   Icons.info,
-                //   color: Cr.redIconColor,
-                // ),
-                hintStyle: const TextStyle(
-                  fontSize: Di.FSD,
-                  color: Cr.grey40,
-                ),
-                border: InputBorder.none,
-                errorBorder: const UnderlineInputBorder(
-                    borderSide: BorderSide(
-                  color: Cr.redIconColor,
-                )),
-                hintText: hintText,
-              ),
-            ),
-          ),
-        ],
       ),
     );
   }

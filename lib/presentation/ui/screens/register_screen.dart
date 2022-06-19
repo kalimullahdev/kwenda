@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:kwenda/presentation/ui/base/rounded_elevated_button.dart';
+import 'package:kwenda/presentation/ui/base/custom_elevated_button.dart';
+import 'package:kwenda/presentation/ui/base/custom_textfield.dart';
 import 'package:kwenda/presentation/ui/screens/enter_details_screen.dart';
-import 'package:kwenda/presentation/ui/screens/login_screen.dart';
 import 'package:kwenda/presentation/utill/color_resources.dart';
 import 'package:kwenda/presentation/utill/dimensions.dart';
 import 'package:kwenda/presentation/utill/nav.dart';
@@ -37,7 +37,7 @@ class RegisterScreen extends StatelessWidget {
               ),
             ),
             Di.SBHL,
-            const SignInTextField(
+            const CustomTextField(
               hintText: Str.phone_number,
               leading: Text(
                 Str.country_code,

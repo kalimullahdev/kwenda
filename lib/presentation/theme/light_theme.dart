@@ -8,11 +8,17 @@ ThemeData lightTheme(BuildContext context) => ThemeData(
       //appbar theme
       appBarTheme: const AppBarTheme(
         backgroundColor: Cr.whiteColor,
+
         // color: Cr.black,
         foregroundColor: Cr.black,
         titleTextStyle: TextStyle(
+          color: Cr.black,
           fontFamily: FontsFamily.sdfRegular,
         ),
+      ),
+      checkboxTheme: CheckboxThemeData(
+        checkColor: MaterialStateProperty.all(Colors.white),
+        fillColor: MaterialStateProperty.all(Colors.black),
       ),
       //
       primaryColor: Cr.colorPrimary,
