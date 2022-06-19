@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:kwenda/presentation/ui/base/custom_elevated_button.dart';
 import 'package:kwenda/presentation/ui/base/custom_textfield.dart';
 import 'package:kwenda/presentation/ui/screens/change_password_screen.dart';
+import 'package:kwenda/presentation/ui/screens/home_screen.dart';
 import 'package:kwenda/presentation/utill/color_resources.dart';
 import 'package:kwenda/presentation/utill/dimensions.dart';
 import 'package:kwenda/presentation/utill/images.dart';
@@ -79,6 +80,7 @@ class LoginScreen extends StatelessWidget {
                   height: 45,
                   width: double.infinity,
                   child: CustomElevatedButton(
+                    onPressed: () => Nav.push(context, const HomeScreen()),
                     textWidget: Text(
                       Str.sign_in.toUpperCase(),
                       style: const TextStyle(

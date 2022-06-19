@@ -5,8 +5,8 @@ import 'package:kwenda/presentation/utill/styles.dart';
 
 import 'package:flutter/services.dart';
 
-class CustomTextField extends StatelessWidget {
-  const CustomTextField({
+class SimpleCustomTextField extends StatelessWidget {
+  const SimpleCustomTextField({
     Key? key,
     this.controller,
     this.hintText,
@@ -53,7 +53,7 @@ class CustomTextField extends StatelessWidget {
   final double? maxTextLenght;
   final Color? prefixIconColor;
   final Color? cursorColor;
-  final Icon? prefixIcon;
+  final Widget? prefixIcon;
   final TextStyle? hintStyle;
   final EdgeInsetsGeometry? contentPadding;
   final TextAlign? textAlign;

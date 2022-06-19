@@ -17,9 +17,14 @@ class Img {
   static const String email = 'assets/images/email.png';
   static const String ic_lock_outline_black_24dp =
       'assets/images/ic_lock_outline_black_24dp.png';
+  static const String home = 'assets/images/home.png';
+  static const String parcel = 'assets/images/parcel.jpg';
+  static const String work = 'assets/images/work.png';
+  // static const String ic_launcher_main = 'assets/images/ic_launcher_main.png';
+  // static const String ic_launcher_main = 'assets/images/ic_launcher_main.png';
   // static const String ic_launcher_main = 'assets/images/ic_launcher_main.png';
   // static const String ic_launcher_main = 'assets/images/ic_launcher_main.png';
 
 }
 
-// email.png
+// email.png.  parcel

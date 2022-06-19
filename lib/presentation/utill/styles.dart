@@ -18,6 +18,13 @@ class Styles {
       Radius.circular(10),
     ),
   );
+  static final BoxDecoration boxDecorationRoundedShadow = BoxDecoration(
+    color: Cr.whiteColor,
+    boxShadow: Styles.boxShadow,
+    borderRadius: const BorderRadius.all(
+      Radius.circular(1000),
+    ),
+  );
   static final BoxDecoration boxDecorationWithShadow = BoxDecoration(
     color: Cr.whiteColor,
     boxShadow: Styles.boxShadow,
@@ -26,6 +33,8 @@ class Styles {
     ),
   );
 }
+
+// borderRadius: BorderRadius.circular(4),
 
 const defaultRegular = TextStyle(
   fontFamily: 'Montserrat',
