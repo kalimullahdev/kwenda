@@ -1,5 +1,5 @@
 class URLHelper {
-  static const String base = "https://kwendazm.com/";
+  static const String base = "https://kwendatransport.com/";
   static const String REDIRECT_URL = base;
   static const String REDIRECT_SHARE_URL = "http://maps.google.com/maps?q=loc:";
   static const String APP_URL =

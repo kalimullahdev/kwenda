@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kwenda/presentation/ui/base/custom_text_field.dart';
 import 'package:kwenda/presentation/ui/screens/google_maps.dart';
-import 'package:kwenda/presentation/ui/screens/home_bottom_sheet.dart';
+import 'package:kwenda/presentation/ui/screens/image_text_button.dart';
 import 'package:kwenda/presentation/utill/color_resources.dart';
 import 'package:kwenda/presentation/utill/dimensions.dart';
 import 'package:kwenda/presentation/utill/images.dart';
@@ -16,13 +16,50 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: _scaffoldKey,
+      extendBodyBehindAppBar: true,
+      drawer: Drawer(
+        child: Column(
+          children: const [],
+        ),
+      ),
+      appBar: AppBar(
+        backgroundColor: Cr.transparent,
+        shadowColor: Cr.transparent,
+        leading: SizedBox(
+          child: Center(
+            child: InkWell(
+              onTap: () => _scaffoldKey.currentState!.openDrawer(),
+              child: Container(
+                width: 40,
+                height: 40,
+                decoration: Styles.boxDecorationRoundedShadow,
+                child: const Icon(
+                  Icons.menu,
+                  color: Cr.colorPrimary,
+                  size: 30,
+                ),
+              ),
+            ),
+          ),
+        ),
+      ),
       body: Stack(
-        children: const [
-          GoogleMapsScreen(),
-          HomeDraggableScrollableSheet(),
+        children: [
+          LayoutBuilder(
+            builder: (BuildContext context, BoxConstraints constraints) {
+              return SizedBox(
+                height: constraints.maxHeight * .8,
+                child: const GoogleMapsScreen(),
+              );
+            },
+          ),
+          const HomeDraggableScrollableSheet(),
         ],
       ),
     );
@@ -38,9 +75,9 @@ class HomeDraggableScrollableSheet extends StatelessWidget {
   Widget build(BuildContext context) {
     return DraggableScrollableSheet(
       initialChildSize: .4,
-      minChildSize: .2,
-      maxChildSize: .95,
-      builder: (context, scrollController) {
+      minChildSize: .4,
+      maxChildSize: .97,
+      builder: (context, ScrollController scrollController) {
         return Container(
           color: Cr.whiteColor,
           width: Di.getScreenSize(context).width,

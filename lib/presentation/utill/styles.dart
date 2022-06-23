@@ -22,7 +22,7 @@ class Styles {
     color: Cr.whiteColor,
     boxShadow: Styles.boxShadow,
     borderRadius: const BorderRadius.all(
-      Radius.circular(1000),
+      Radius.circular(300),
     ),
   );
   static final BoxDecoration boxDecorationWithShadow = BoxDecoration(

@@ -6,7 +6,7 @@ class Cr {
   static const Color colorAccent = Color(0xffff9100);
   static const Color orange = Color(0xffffa500);
   static const Color semiTransparentColor = Color(0x20ffffff);
-  static const Color transparent = Color(0x00000000);
+  static const Color transparent = Colors.transparent;
   static const Color transparentWhite = Color(0x99FFFFFF);
   static const Color edittextSolid = Color(0xffEBEBEB);
   static const Color edittextBorder = Color(0xffB7B7B7);
