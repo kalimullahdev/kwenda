@@ -16,3 +16,11 @@
 
 
 
+// flutter packages pub run build_runner watch --delete-conflicting-outputs  
+
+
+//  primary 0xffff6347
+//  secondry   0xffFF8C00
+
+        //  MaterialStateProperty.all(Color(0xffFFB344)),
+/// background color e0e0e0

@@ -35,20 +35,40 @@ dependencies:
   cupertino_icons: ^1.0.2
   font_awesome_flutter: ^10.1.0
   introduction_screen: ^3.0.2
-  flutter_svg: ^1.0.3
+  flutter_svg: ^1.1.0
   google_maps_flutter: ^2.1.8
-
+  cloud_firestore: ^3.1.18
+  dartz: ^0.10.0-nullsafety.2
+  toggle_switch: ^2.0.1
+  firebase_core: ^1.6.0
+  firebase_auth: ^3.1.0
+  get_it: ^7.2.0
+  injectable: ^1.5.0
+  freezed_annotation: ^0.14.3
+  rxdart: ^0.27.4
+  uuid: ^3.0.6
+  bloc: ^8.0.3
+  flutter_bloc: ^8.0.1
 dev_dependencies:
   change_app_package_name: ^1.1.0
-  flutter_lints: ^1.0.4
+  flutter_lints: ^2.0.1
   flutter_test:
     sdk: flutter
 
-  # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
+  build_runner: ^2.0.6
+  freezed: ^0.14.5
+  injectable_generator: ^1.5.1
+  json_serializable: ^5.0.0
+
+# dependency_overrides:
+#   analyzer: ^2.1.0
+#   meta: ^1.7.0
+
+# The "flutter_lints" package below contains a set of recommended lints to
+# encourage good coding practices. The lint set provided by the package is
+# activated in the `analysis_options.yaml` file located at the root of your
+# package. See that file for information about deactivating specific lint
+# rules and activating additional ones.
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

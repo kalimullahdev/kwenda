@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.kalimse.kwenda">
+    package="com.tagxi.user">
    <application
         android:label="kwenda"
         android:name="${applicationName}"

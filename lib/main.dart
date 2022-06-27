@@ -1,8 +1,15 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:kwenda/presentation/theme/light_theme.dart';
-import 'package:kwenda/presentation/ui/screens/splash_screen.dart';
+import 'package:injectable/injectable.dart';
+import 'package:kwenda/userinterface/theme/light_theme.dart';
+import 'package:kwenda/userinterface/ui/screens/splash_screen.dart';
 
-void main() {
+import 'injection.dart';
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  configureInjection(Environment.prod);
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 

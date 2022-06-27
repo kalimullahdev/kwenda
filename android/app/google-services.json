@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "1036589305515",
+    "firebase_url": "https://kwenda-bus-default-rtdb.firebaseio.com",
+    "project_id": "kwenda-bus",
+    "storage_bucket": "kwenda-bus.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036589305515:android:5737bed803568fdb2af1ee",
+        "android_client_info": {
+          "package_name": "com.highapp.qwenda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1036589305515-a3r1tqsnq5bk62ul6hqdlhfver1mtkmf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.highapp.qwenda",
+            "certificate_hash": "bdc1025bab8f7bc34b9d008e2bc35206fa18a5fd"
+          }
+        },
+        {
+          "client_id": "1036589305515-ihc6u4ocglsk69v3c9irdr9jidiou1c1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.highapp.qwenda",
+            "certificate_hash": "525a75e03583df3347afaff906f16db4cf2664e3"
+          }
+        },
+        {
+          "client_id": "1036589305515-152n74jvt8tdg9p1b0o5m22opprn022a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAY7CzU0AOvWfwKsID1wavSHinOvZMCvH4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1036589305515-152n74jvt8tdg9p1b0o5m22opprn022a.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1036589305515-9402emsun207ics3na390salq40j90pt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.highapp.qwenda"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036589305515:android:e1d240e3c819c64a2af1ee",
+        "android_client_info": {
+          "package_name": "com.tagxi.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1036589305515-oplim4rfaqm4e1j5fo54luoq25o5m6s7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tagxi.user",
+            "certificate_hash": "bdc1025bab8f7bc34b9d008e2bc35206fa18a5fd"
+          }
+        },
+        {
+          "client_id": "1036589305515-152n74jvt8tdg9p1b0o5m22opprn022a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAY7CzU0AOvWfwKsID1wavSHinOvZMCvH4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1036589305515-152n74jvt8tdg9p1b0o5m22opprn022a.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1036589305515-9402emsun207ics3na390salq40j90pt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.highapp.qwenda"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
